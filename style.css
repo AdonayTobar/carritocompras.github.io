@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+header {
+    background-image: url("https://images.pexels.com/photos/4029473/pexels-photo-4029473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position:center;
+    height: 30rem;
+}
+header h1 {
+    text-align: center;
+    font-size: 10rem;
+    color: rgb(255, 255, 255);
+    padding: 3rem 0 0 0;
+    font-weight: bold;
+}
+header h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.contenedor {
+    max-width: 120rem;
+    padding: 3rem;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* Esto oculta lo que queda fuera del contenedor */
+    contain: paint;
+}
+.contenedor .contenedor-items{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 4rem;
+    transition: .3s;
+    justify-content: center;
+}
+
+.contenedor .contenedor-items .item {
+    max-width: 20rem;
+    height: auto;
+    transition: .3s;
+    border: .1rem solid white;
+    border-radius: 1rem;
+}
+.contenedor .contenedor-items .item:hover {
+    scale: 1.1;
+    box-shadow: 0 0 4rem #9b9b9b;
+}
+.contenedor-items .item .img-item {
+    width: 100%;
+    display: flex;
+    border-radius: 1rem;
+    
+}
+.contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.contenedor-items .item .precio-item {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.contenedor-items .item .boton-item{
+    display: block;
+    margin: 1rem auto;
+    border: none;
+    background: black;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
